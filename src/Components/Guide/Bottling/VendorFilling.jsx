@@ -27,7 +27,7 @@ export default function Dilution() {
     return (
         <div>
             <div className="row">
-                <div className="col-sm-9">
+                <div className="col-sm-9 pb-5 mb-5">
                     <h2 style={{ marginBottom: "50px" }}>{window.locale.translate("Filling Through Vendors")}</h2>
                     <Element name="">
                         {window.locale.translate("Filling through vendors is the process when you send you spirit in bulk to be packaged by other vendors. In this case, you create a new dispatch entry in Litres that has been sent. When the packaged bottles/cans are received, you mark that dispatch entry as received and enter the number of bottles and cans received that will be added to your inventory.")}

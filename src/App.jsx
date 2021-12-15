@@ -24,7 +24,7 @@ import { Helmet } from 'react-helmet'
 
 import { Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 import { translate } from "./Localization/translate.js"
-
+import Axios from "axios";
 
 
 
@@ -112,11 +112,25 @@ const App = (props) => {
 
 
 
+
+	Axios.get('https://geolocation-db.com/json/').then((response) => {
+		Axios.get("https://app.edistillery.net/web/visit", {
+			params: {
+				ip: response.data.IPv4,
+			},
+		})
+	})
+
+
+
+
+
+
 	return (
 		<Router>
 			<Helmet>
 				<title>{"eDistillery - The solution for your alcohol warehouse"}</title>
-				<meta name="description" content="Build your warehouse, Access from anywhere, Work out the alcoholic spirits." />
+				<meta name="description" content="Build your warehouse, Access from anywhere, Work out the alcohol in spirits." />
 				<meta name="keywords" content="Alcohol managing application, distillery management application, distillery management software, alcohol record keeping, alcohol management tool, alcohol tex" />
 			</Helmet>
 			<div className="App d-flex" style={{ fontFamily: "Poppins,sans-serif", overflowX: "hidden" }}>
@@ -139,8 +153,8 @@ const App = (props) => {
 							<ArrowBarUp />
 						</button>
 					) : (
-							""
-						)}
+						""
+					)}
 
 					<Switch>
 						<Route path="/app-guide" >

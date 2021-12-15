@@ -25,7 +25,7 @@ export default function Setup() {
     return (
         <div>
             <div className="row">
-                <div className="col-sm-9">
+                <div className="col-sm-9 pb-5 mb-5">
                     <Element name="Setup">
                         <h2 style={{ marginBottom: "50px" }}>{window.locale.translate("Setup")}</h2>
                         {window.locale.translate("The first step to start using the application is to setup the users, products, containers and casks.")}

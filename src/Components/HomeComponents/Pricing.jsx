@@ -49,7 +49,7 @@ function Pricing() {
 		from: { opacity: isInView3 ? 0 : 1 },
 		to: { opacity: isInView3 ? 1 : 0, transform: isInView3 ? "translate(0, 0)" : "translate(0, -0px)" },
 		delay: isInView3 ? 100 : 0,
-		config: { duration: isInView3 ? 1000 : 0 }
+		config: { duration: isInView3 ? 3000 : 0 }
 	})
 
 
@@ -76,13 +76,13 @@ function Pricing() {
 
 
 	return (
-		<div className="row pt-5 pb-5 text-center justify-content-center align-items-center pricing-div">
+		<div className="row pt-5 pb-5  pl-2 pr-2 text-center justify-content-center align-items-center pricing-div">
 			<div className="col-sm-12 mb-5">
 
 				<VisibilitySensor onChange={onVisibilityChange}>
 					{({ isVisible }) => (
 						<animated.div style={fadeIn}>
-							<h1 className="" style={{ fontSize: "60px", color:"#414042" }}>Pricing </h1>
+							<h1 className="" style={{ fontSize: "3rem", color:"#414042" }}>Pricing </h1>
 						</animated.div>
 					)}
 				</VisibilitySensor>
@@ -117,7 +117,7 @@ function Pricing() {
 
 			<div className="col-sm-12 mt-5 mb-5">
 
-				<VisibilitySensor onChange={onVisibilityChange3}>
+				<VisibilitySensor onChange={onVisibilityChange3} partialVisibility={true}>
 					{({ isVisible }) => (
 						<animated.div style={fadeIn3}>
 							<a href="https://app.edistillery.net/register" target="_blank">

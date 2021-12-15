@@ -25,7 +25,7 @@ export default function ProductTypes() {
     return (
         <div>
             <div className="row">
-                <div className="col-sm-9">
+                <div className="col-sm-9 pb-5 mb-5">
                     <Element name="Setup">
                         <h2 style={{ marginBottom: "50px" }}>{window.locale.translate("Types Of Products")}</h2>
                         {window.locale.translate("The application is based on the following types of products.")}

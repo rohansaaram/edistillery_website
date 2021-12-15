@@ -28,7 +28,7 @@ export default function Overview() {
     return (
         <div>
             <div className="row">
-                <div className="col-sm-9">
+                <div className="col-sm-9 pb-5 mb-5">
                     <h2 style={{ marginBottom: "50px" }}>{window.locale.translate("Inventory")}</h2>
                     <Element name="Overview">
                         <h4 style={{ marginBottom: "50px" }}>{window.locale.translate("Overview")}</h4>

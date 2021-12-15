@@ -22,7 +22,7 @@ export default function GettingStarted() {
     return (
         <div>
             <div className="row">
-                <div className="col-sm-9">
+                <div className="col-sm-9 pb-5 mb-5">
                     <h2 style={{ marginBottom: "20px" }}>{window.locale.translate("Getting Started")}</h2>
                     <Element name="Introduction">
                         <h5 style={{ marginBottom: "20px" }}>{window.locale.translate("Introduction")}</h5>

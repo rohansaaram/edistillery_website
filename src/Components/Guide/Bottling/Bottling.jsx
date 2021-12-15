@@ -27,7 +27,7 @@ export default function Dilution() {
     return (
         <div>
             <div className="row">
-                <div className="col-sm-9">
+                <div className="col-sm-9 pb-5 mb-5">
                     <h2 style={{ marginBottom: "50px" }}>{window.locale.translate("Bottling Runs")}</h2>
                     <Element name="" className="">
                         {window.locale.translate("For a typical warehouse where spirits are filled into bottles and cans, eDistillery provides the module for all the record keeping of packaging spirits including recording losses incurred during the process.")}

@@ -29,7 +29,7 @@ export default function Containers() {
     return (
         <div>
             <div className="row">
-                <div className="col-sm-9">
+                <div className="col-sm-9 pb-5 mb-5">
                     <h2 style={{ marginBottom: "50px" }}>{window.locale.translate("Containers")}</h2>
                     <Element name="Overview">
                         <h4 style={{ marginBottom: "50px" }}>{window.locale.translate("Overview")}</h4>

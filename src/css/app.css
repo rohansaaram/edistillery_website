@@ -162,6 +162,9 @@ a.top-bar-visit-link:hover {
 	font-size: 18px;
 }
 
+ul{
+	padding: 0;
+}
 
 .card-body b {
 	font-size:15px;
@@ -233,7 +236,7 @@ p{
 }
 
 .contact-us-email-address {
-	color: rgb(142, 155, 163);
+	color: #fff;
 	text-decoration: underline;
 }
 
@@ -277,7 +280,7 @@ p{
 .circle-div{
 	padding:2rem;
 	height:100%;
-	line-height: 10px;
+	line-height: 20px;
 
 }
 

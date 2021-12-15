@@ -57,7 +57,7 @@ export default function TheAlcoholBook() {
 
                     <VisibilitySensor onChange={onVisibilityChange}>
                         <animated.div style={fadeIn}>
-                            <h1 className="h1Class" style={{ fontSize: "60px", color:"#1b75bc" }}>
+                            <h1 className="h1Class" style={{ fontSize: "3rem", color:"#1b75bc" }}>
                                 The Alcohol Book
                             </h1>
                         </animated.div>
@@ -99,12 +99,12 @@ export default function TheAlcoholBook() {
                                 backgroundImage: `url("")`,
                                 backgroundRepeat: "no-repeat",
                                 backgroundSize: "cover",
-                                minHeight: "90vh",
+                                
                                 willChange: "transform, opacity",
                                 opacity: opacity.to(o => 1 - o), transform
                             }}
                         >
-                            <img src={allMonths} alt="" />
+                            <img src={allMonths} alt="" className="img-fluid pl-4 pr-4"/>
                         </a.div>
 
                         <a.div
@@ -112,14 +112,14 @@ export default function TheAlcoholBook() {
                                 backgroundImage: `url("")`,
                                 backgroundRepeat: "no-repeat",
                                 backgroundSize: "cover",
-                                minHeight: "90vh",
+                                
                                 willChange: "transform, opacity",
                                 opacity,
                                 transform,
                                 rotateX: '180deg',
                             }}
                         >
-                            <img src={specificMonth} alt="" />
+                            <img src={specificMonth} alt=""  className="img-fluid pl-4 pr-4"/>
                         </a.div>
                     </div>
 
@@ -129,7 +129,7 @@ export default function TheAlcoholBook() {
 
 
             <div className="row mt-5">
-                <div className="col-sm-12 text-center">
+                <div className="col-sm-12 text-center p-5">
 
                     <VisibilitySensor onChange={onVisibilityChange1}>
                         <animated.div style={fadeIn1}>

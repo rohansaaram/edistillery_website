@@ -27,7 +27,7 @@ export default function Sampling() {
     return (
         <div>
             <div className="row">
-                <div className="col-sm-9">
+                <div className="col-sm-9 pb-5 mb-5">
                     <h2 style={{ marginBottom: "50px" }}>{window.locale.translate("Dispatches")}</h2>
                     <Element name="">
                         {window.locale.translate("When you are done with bottling runs and have the finished bottles/cans ready in hand in the warehouse, now you can dispatch them from the dispatches section.")}

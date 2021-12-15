@@ -154,11 +154,11 @@ export default function Guide(props) {
 
                     <div className="row text-center mt-5" style={{ minHeight: "120vh" }}>
                         <div className="col-sm-3 pl-5">
-                            <div className="guide-menus text-left">
+                            <div className="guide-menus text-left pb-5 mb-5">
                                 <Menu setCurrentView={setCurrentView} />
                             </div>
                         </div>
-                        <div className="col-sm-9 guide-content text-left">
+                        <div className="col-sm-9 guide-content text-left pl-5 pr-5">
                             {getComponent()}
                         </div>
 

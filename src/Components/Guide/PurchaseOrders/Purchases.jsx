@@ -28,7 +28,7 @@ export default function Purchases() {
     return (
         <div>
             <div className="row">
-                <div className="col-sm-9">
+                <div className="col-sm-9 pb-5 mb-5">
                     <Element name="">
                         <h2 style={{ marginBottom: "50px" }}>{window.locale.translate("Purchase Orders")}</h2>
                         {window.locale.translate("Both raw materials and imported products can be added to eDistillery by means of purchase orders. Purchase orders in eDistillery are to keep record of the incoming mash, raw/neutral alcohol and ready made spirits. These are not typical invoices generated. ")}

@@ -19,7 +19,7 @@ function NavBar(props) {
 
 	const fadeInButton = useSpring({
 		from: { opacity: isInView ? 0 : 1 },
-		to: { opacity: isInView ? 1 : 0, transform: isInView ? "translate(0, 0)" : "translate(0, -20px)" },
+		to: { opacity: isInView ? 1 : 0, transform: isInView ? "translate(0, 0)" : "translate(0, -40px)" },
 		delay: isInView ? 200 : 0,
 		config: { duration: isInView ? 1000 : 0 }
 	})
@@ -32,7 +32,7 @@ function NavBar(props) {
 			>
 				<div className="col-sm-12" style={{ textAlign: "center" }}>
 					<h6>
-						<a href="#" className="top-bar-visit-link">
+						<a href="https://app.edistillery.net" target="_blank" className="top-bar-visit-link">
 							Register now
 						</a>
 						and start your experience with 3 months absolutely free.
@@ -42,15 +42,18 @@ function NavBar(props) {
 			<div
 				className="row justify-content-center align-items-center "
 			>
-				<div className="col-sm-3">
+				<div className="col-sm-12 col-md-6 col-lg-3">
 					<a href="https://www.edistillery.net">
 						<img src={logo} alt="" className="ml-5 mt-5" style={{ height: "125px", width: "700px" }} />
 					</a>
 				</div>
 
-				<div className="col-sm-9 pl-5">
+				<div className="col-sm-12 col-md-9 col-lg-9  pl-5">
 
-					<VisibilitySensor onChange={onVisibilityChange}>
+					<VisibilitySensor 
+						onChange={onVisibilityChange}
+						partialVisibility={true}
+						>
 						{({ isVisible }) => (
 							<animated.div style={fadeInButton}>
 

@@ -21,7 +21,7 @@ function MainRow() {
 		from: { opacity: isInView1 ? 0 : 1 },
 		to: { opacity: isInView1 ? 1 : 0, transform: isInView1 ? "translate(0, 0)" : "translate(0, 0px)" },
 		delay: isInView1 ? 200 : 0,
-		config: { duration: isInView1 ? 1000 : 0 }
+		config: { duration: isInView1 ? 3000 : 0 }
 	})
 
 
@@ -49,7 +49,7 @@ function MainRow() {
 			>
 				<div className="row ">
 					<div className="col-2"></div>
-					<div className="col-sm-8 d-flex justify-content-center align-items-center text-center">
+					<div className="col-sm-12 d-flex justify-content-center align-items-center text-center">
 
 
 
@@ -69,7 +69,7 @@ function MainRow() {
 					<div className="col-2"></div>
 					<div className="col-12 d-flex justify-content-center align-items-center mt-4">
 
-						<VisibilitySensor onChange={onVisibilityChange1}>
+						<VisibilitySensor onChange={onVisibilityChange1} partialVisibility={ true }>
 							{({ isVisible }) => (
 								<animated.div style={fadeIn1}>
 									<a href="https://app.edistillery.net/register" target="_blank">
@@ -86,7 +86,7 @@ function MainRow() {
 
 					<div className="col-sm-12">
 						<div className="row mt-4">
-							<div className="col-sm-12 d-flex text-center justify-content-center align-items-center mt-3">
+							<div className="col-sm-12 pl-4 pr-4 d-flex text-center justify-content-center align-items-center mt-3">
 
 
 								<VisibilitySensor onChange={onVisibilityChange}>
@@ -112,8 +112,8 @@ function MainRow() {
 								<VisibilitySensor onChange={onVisibilityChange}>
 									{({ isVisible }) => (
 										<animated.div style={fadeIn}>
-											<h3 className="custom3" style={{ fontSize: "22px" }}>
-												{window.locale.translate('Build your warehouse, Access from anywhere, Work out the alcoholic spirits. ')}
+											<h3 className="custom3 mb-5 mt-3 pr-2 pl-2" style={{ fontSize: "22px" }}>
+												{window.locale.translate('Build your warehouse, Access from anywhere, Work out the alcohol in spirits. ')}
 											</h3>
 										</animated.div>
 									)}

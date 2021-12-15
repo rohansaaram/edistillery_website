@@ -57,7 +57,7 @@ function Features() {
 				<VisibilitySensor onChange={onVisibilityChange}>
 					{({ isVisible }) => (
 						<animated.div style={fadeIn}>
-							<h2 className="h1Class" style={{ fontSize: "60px" }}>Features</h2>
+							<h2 className="h1Class" style={{ fontSize: "3rem" }}>Features</h2>
 						</animated.div>
 					)}
 				</VisibilitySensor>
@@ -70,9 +70,9 @@ function Features() {
 
 
 
-					<div className="col-sm-4">
+				<div className="col-sm-12 col-md-4">
 						<div className="circle-div text-center justify-content-center align-items-center">
-							<VisibilitySensor onChange={onVisibilityChange3}>
+							<VisibilitySensor onChange={onVisibilityChange3} partialVisibility={true}>
 								{({ isVisible }) => (
 									<animated.div style={fadeIn3}>
 										<h5 className="features-h5">Inventory Management</h5>
@@ -89,10 +89,10 @@ function Features() {
 					</div>
 
 
-					<div className="col-sm-4">
+					<div className="col-sm-12 col-md-4">
 						<div className="circle-div text-center justify-content-center align-items-center">
 
-							<VisibilitySensor onChange={onVisibilityChange3}>
+							<VisibilitySensor onChange={onVisibilityChange3} partialVisibility={true}>
 								{({ isVisible }) => (
 									<animated.div style={fadeIn3}>
 
@@ -109,9 +109,9 @@ function Features() {
 						</div>
 					</div>
 
-					<div className="col-sm-4">
+					<div className="col-sm-12 col-md-4">
 						<div className="circle-div text-center justify-content-center align-items-center">
-							<VisibilitySensor onChange={onVisibilityChange3}>
+							<VisibilitySensor onChange={onVisibilityChange3} partialVisibility={true}>
 								{({ isVisible }) => (
 									<animated.div style={fadeIn3}>
 
@@ -129,7 +129,7 @@ function Features() {
 						</div>
 					</div>
 
-					<div className="col-sm-4 mt-5">
+					<div className="col-sm-12 col-md-4">
 						<div className="circle-div text-center justify-content-center align-items-center">
 
 							<VisibilitySensor onChange={onVisibilityChange4}>
@@ -150,7 +150,7 @@ function Features() {
 					</div>
 
 
-					<div className="col-sm-4 mt-5">
+					<div className="col-sm-12 col-md-4">
 						<div className="circle-div text-center justify-content-center align-items-center">
 
 							<VisibilitySensor onChange={onVisibilityChange4}>
@@ -170,7 +170,7 @@ function Features() {
 					</div>
 
 
-					<div className="col-sm-4 mt-5">
+					<div className="col-sm-12 col-md-4">
 						<div className="circle-div text-center justify-content-center align-items-center">
 
 							<VisibilitySensor onChange={onVisibilityChange4}>
@@ -187,7 +187,7 @@ function Features() {
 					</div>
 
 
-					<div className="col-sm-4 mt-5">
+					<div className="col-sm-12 col-md-4">
 						<div className="circle-div text-center justify-content-center align-items-center">
 							<VisibilitySensor onChange={onVisibilityChange5}>
 								<animated.div style={fadeIn5}>
@@ -201,7 +201,7 @@ function Features() {
 					</div>
 
 
-					<div className="col-sm-4 mt-5">
+					<div className="col-sm-12 col-md-4">
 						<div className="circle-div text-center justify-content-center align-items-center">
 							<VisibilitySensor onChange={onVisibilityChange5}>
 								<animated.div style={fadeIn5}>
@@ -218,7 +218,7 @@ function Features() {
 					</div>
 
 
-					<div className="col-sm-4 mt-5">
+					<div className="col-sm-12 col-md-4">
 						<div className="circle-div text-center justify-content-center align-items-center">
 							<VisibilitySensor onChange={onVisibilityChange5}>
 								<animated.div style={fadeIn5}>

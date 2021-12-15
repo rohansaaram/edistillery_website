@@ -28,7 +28,7 @@ export default function InitializeInventory() {
     return (
         <div>
             <div className="row">
-                <div className="col-sm-9">
+                <div className="col-sm-9 pb-5 mb-5">
                     <Element name="Setup">
                         <h2 style={{ marginBottom: "50px" }}>{window.locale.translate("Inventory Initialization")}</h2>
                         {window.locale.translate("After setting up the products and the containers the second step to start using the application is to import your warehouse stock positions into the application.")}

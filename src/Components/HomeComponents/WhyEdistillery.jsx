@@ -66,7 +66,7 @@ export default function WhyEdistillery() {
                 <VisibilitySensor onChange={onVisibilityChange}>
                     {({ isVisible }) => (
                         <animated.div style={fadeIn}>
-                            <h1 className="h1Class" style={{ fontSize: "60px", color: "#fff" }}>Why eDistillery ?</h1>
+                            <h1 className="h1Class" style={{ fontSize: "3rem", color: "#fff" }}>Why eDistillery ?</h1>
                         </animated.div>
                     )}
                 </VisibilitySensor>
@@ -104,18 +104,18 @@ export default function WhyEdistillery() {
                 <div className="row pt-5 pl-5 pr-5 ">
                     <div className="col-sm-6">
                         <div className="card border-0">
-                            <div className="card-header text-center">
+                            <div className="card-header">
                                 <h4>Dedicated For</h4>
                             </div>
                             <div className="card-body ">
-                                <div className="pl-5 pr-5 pt-2 text-center">
+                                <div className="">
                                     <VisibilitySensor onChange={onVisibilityChange3}>
                                         {({ isVisible }) => (
                                             <animated.div style={fadeIn3}>
-                                                <ul>
-                                                    <li>Bonded Warehouses</li>
-                                                    <li>Manufacturers & Distillers Of Alcohol Beverages</li>
-                                                    <li>Bulk Spirit Producers </li>
+                                                <ul style={{ padding: "0px" }}>
+                                                    <li>Bonded Warehouses.</li>
+                                                    <li>Manufacturers & Distillers Of Alcohol Beverages.</li>
+                                                    <li>Bulk Spirit Producers.</li>
                                                     <li>Companies Obliged To Excise Regulations.</li>
                                                 </ul>
                                             </animated.div>
@@ -127,20 +127,20 @@ export default function WhyEdistillery() {
                     </div>
                     <div className="col-sm-6">
                         <div className="card border-0">
-                            <div className="card-header text-center">
+                            <div className="card-header">
                                 <h4>The Alcohol Book</h4>
                             </div>
                             <div className="card-body">
-                                <div className="pl-5 pr-5 pt-2">
+                                <div className="">
                                     <VisibilitySensor onChange={onVisibilityChange3}>
                                         {({ isVisible }) => (
                                             <animated.div style={fadeIn3}>
-                                                <ul>
-                                                    <li>Opening Alcohol</li>
-                                                    <li>Incoming/Purchased/Fermented Alcohol</li>
-                                                    <li> Outgoing Alcohol</li>
-                                                    <li> Losses Incurred During Each Step</li>
-                                                    <li> Closing Level Of Alcohol</li>
+                                                <ul style={{ padding: "0px" }}>
+                                                    <li>Opening Alcohol.</li>
+                                                    <li>Incoming / Produced Alcohol.</li>
+                                                    <li> Outgoing Alcohol.</li>
+                                                    <li> Losses Incurred During Each Step.</li>
+                                                    <li> Closing Level Of Alcohol.</li>
                                                 </ul>
                                             </animated.div>
                                         )}
@@ -156,19 +156,19 @@ export default function WhyEdistillery() {
                 <div className="row pr-5 pt-2 pl-5 ">
                     <div className="col-sm-6">
                         <div className="card border-0">
-                            <div className="card-header text-center">
+                            <div className="card-header ">
                                 <h4>Easy Conversions</h4>
                             </div>
                             <div className="card-body">
-                                <div className="pl-5 pr-5 pt-2">
+                                <div className="">
                                     <VisibilitySensor onChange={onVisibilityChange4}>
                                         {({ isVisible }) => (
                                             <animated.div style={fadeIn4}>
-                                                <ul>
-                                                    <li>Integrated Density & Mass Volume Tables</li>
-                                                    <li>Automated Conversions While Mixing</li>
-                                                    <li>Versatility of both KG & Litres</li>
-                                                    <li>An Explicit Incorporated Conversion Tool</li>
+                                                <ul style={{ padding: "0px" }}>
+                                                    <li>Integrated Density & Mass Volume Tables.</li>
+                                                    <li>Automated Conversions While Mixing.</li>
+                                                    <li>Versatility of both KG & Litres.</li>
+                                                    <li>An Explicit Incorporated Conversion Tool.</li>
                                                 </ul>
                                             </animated.div>
                                         )}
@@ -180,19 +180,19 @@ export default function WhyEdistillery() {
                     </div>
                     <div className="col-sm-6">
                         <div className="card border-0">
-                            <div className="card-header text-center">
+                            <div className="card-header">
                                 <h4>Credibility & Reliablity</h4>
                             </div>
                             <div className="card-body">
-                                <div className="pl-5 pr-5 pt-2">
+                                <div className="">
                                     <VisibilitySensor onChange={onVisibilityChange4}>
                                         {({ isVisible }) => (
                                             <animated.div style={fadeIn4}>
-                                                <ul>
-                                                    <li>Downloadable PDFs & Excels</li>
-                                                    <li>Automated Email Service</li>
-                                                    <li>Daily, Weekly & Monthly Data</li>
-                                                    <li>Unlimited Backup Emails</li>
+                                                <ul style={{ padding: "0px" }}>
+                                                    <li>Downloadable PDFs & Excels.</li>
+                                                    <li>Automated Email Service.</li>
+                                                    <li>Daily, Weekly & Monthly Data.</li>
+                                                    <li>Unlimited Backup Emails.</li>
                                                 </ul>
                                             </animated.div>
                                         )}

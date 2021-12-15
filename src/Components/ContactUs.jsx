@@ -66,7 +66,7 @@ class ContactUs extends Component {
 
 	render() {
 		return (
-			<div className="row pt-5 pb-5 d-flex contact-us-div justify-content-center align-items-center">
+			<div className="row pt-5 pb-5 contact-us-div justify-content-center ">
 				<div className="col-sm-12 pt-5 d-flex justify-content-center align-items-center">
 					<VisibilitySensor >
 						{({ isVisible }) => (
@@ -82,7 +82,7 @@ class ContactUs extends Component {
 										return (
 											<animated.div style={props}>
 
-												<h1 className="h1Class" style={{ fontSize: "60px", color: "#fff" }}>
+												<h1 className="h1Class" style={{ fontSize: "3rem", color: "#fff" }}>
 													{window.locale.translate('Contact Us')}
 												</h1>
 
@@ -94,7 +94,7 @@ class ContactUs extends Component {
 						)}
 					</VisibilitySensor >
 				</div>
-				<div className="col-sm-12">
+				<div className="col-sm-12 col-md-8">
 					<div className="row justify-content-center">
 						<div className="col-10 mt-5">
 							{this.state.submitted ? (
@@ -104,113 +104,142 @@ class ContactUs extends Component {
 									<h5>Wish you a good day ahead !</h5>
 								</div>
 							) : (
-									<form>
-										<div className="form-group">
-											<input
-												type="text"
-												className="form-control"
-												name="name"
-												placeholder="Full Name"
-												onChange={this.ChangeHandler}
-											/>
-										</div>
+								<form>
+									<div className="form-group">
+										<input
+											type="text"
+											className="form-control"
+											name="name"
+											placeholder="Full Name"
+											onChange={this.ChangeHandler}
+										/>
+									</div>
 
-										<div className="form-group">
-											<input
-												type="email"
-												name="email"
-												className="form-control"
-												placeholder="Email Address"
-												onChange={this.ChangeHandler}
-											/>
-										</div>
-										<div className="form-group">
-											<input
-												type="text"
-												name="business_name"
-												className="form-control"
-												placeholder="Company Name"
-												onChange={this.ChangeHandler}
-											/>
-										</div>
-										<div className="form-group">
-											<Select options={options}
-												placeholder="Country"
-												styles={customStyles}
-												name="country"
-												onChange={this.CountryChangeHandler}
-											/>
-										</div>
-										<div className="form-group">
-											<input
-												type="text"
-												className="form-control"
-												name="subject"
-												placeholder="Subject"
-												onChange={this.ChangeHandler}
-											/>
-										</div>
-
-
-										<div className="form-group">
-											<textarea
-												className="form-control"
-												name="message"
-												rows="10"
-												onChange={this.ChangeHandler}
-											></textarea>
-										</div>
+									<div className="form-group">
+										<input
+											type="email"
+											name="email"
+											className="form-control"
+											placeholder="Email Address"
+											onChange={this.ChangeHandler}
+										/>
+									</div>
+									<div className="form-group">
+										<input
+											type="text"
+											name="business_name"
+											className="form-control"
+											placeholder="Company Name"
+											onChange={this.ChangeHandler}
+										/>
+									</div>
+									<div className="form-group">
+										<Select options={options}
+											placeholder="Country"
+											styles={customStyles}
+											name="country"
+											onChange={this.CountryChangeHandler}
+										/>
+									</div>
+									<div className="form-group">
+										<input
+											type="text"
+											className="form-control"
+											name="subject"
+											placeholder="Subject"
+											onChange={this.ChangeHandler}
+										/>
+									</div>
 
 
-										<div className="form-group text-center justify-content-center">
-											<ReCAPTCHA
-												sitekey="6LcbHoMcAAAAAP5jNGLaalHfTUbqPZY-OUGfzs9m"
-												//grecaptcha={grecaptchaObject}
-												onChange={this.onChangeCaptcha}
-											/>
-										</div>
+									<div className="form-group">
+										<textarea
+											className="form-control"
+											name="message"
+											rows="10"
+											onChange={this.ChangeHandler}
+										></textarea>
+									</div>
 
 
-										<div className="form-group justify-content-center">
-											{this.state.submitting ? (
-												<div class="spinner-border" role="status">
-													<span class="sr-only">Loading...</span>
-												</div>
-											) : (
-													<button
-														style={{ width: "20%" }}
-														type="button"
-														className=" btn contact-us-submit-button w-100"
-														onClick={this.submitForm}
-													>
-														Submit
-													</button>
-												)}
-										</div>
-									</form>
-								)}
+									<div className="form-group text-center justify-content-center">
+										<ReCAPTCHA
+											sitekey="6LcbHoMcAAAAAP5jNGLaalHfTUbqPZY-OUGfzs9m"
+											//grecaptcha={grecaptchaObject}
+											onChange={this.onChangeCaptcha}
+										/>
+									</div>
+
+
+									<div className="form-group justify-content-center">
+										{this.state.submitting ? (
+											<div class="spinner-border" role="status">
+												<span class="sr-only">Loading...</span>
+											</div>
+										) : (
+											<button
+												style={{ width: "20%" }}
+												type="button"
+												className=" btn contact-us-submit-button w-100"
+												onClick={this.submitForm}
+											>
+												Submit
+											</button>
+										)}
+									</div>
+								</form>
+							)}
 						</div>
 					</div>
 				</div >
 
-				{/*}
-				<div className="col-sm-5 text-left text-center" >
-					<VisibilitySensor >
+
+				<div className="col-10 col-md-4 pt-5"  >
+				<VisibilitySensor partialVisibility={true} >
 						{({ isVisible }) => (
 							<animated.div >
 								<Spring
 									from={{ opacity: isVisible ? 0 : 1 }}
 									to={{ opacity: isVisible ? 1 : 0 }}
-									config={{ duration: 3000 }}
+									config={{ duration: !isVisible ? 0 : 5000 }}
 								>
 
 									{props => {
 										return (
 											<animated.div style={props}>
 
-												<h4 style={{ fontSize: "25px", color: "darkgrey" }}>Or <br />Email us at</h4>
-												<a href="mailto:contact@edistillery.net">
-													<h6 className="contact-us-email-address" style={{ fontSize: "20px" }}>contact@edistillery.net</h6>
+												<h4 style={{ fontSize: "2rem", color: "darkgrey" }}>Address </h4>
+												<h6 className="" style={{ fontSize: "1.25rem" }}>
+												8 Leopold street, <br />
+												Strathtulloh,<br />
+												Vic-3338<br />
+												Melbourne, Australia<br />
+												</h6>
+												
+
+											</animated.div>
+										)
+									}}
+								</Spring>
+							</animated.div>
+						)}
+					</VisibilitySensor >
+					<VisibilitySensor partialVisibility={true} >
+						{({ isVisible }) => (
+							<animated.div >
+								<Spring
+									from={{ opacity: isVisible ? 0 : 1 }}
+									to={{ opacity: isVisible ? 1 : 0 }}
+									config={{ duration: !isVisible ? 0 : 5000 }}
+								>
+
+									{props => {
+										return (
+											<animated.div style={props}>
+
+												<h4 className="pt-3" style={{ fontSize: "2rem", color: "darkgrey" }}>Email address</h4>
+												<a href="mailto:contact@edistillery.net" className="w-auto">
+													<h6 className="contact-us-email-address" style={{ fontSize: "1.25rem"}}>contact@edistillery.net</h6>
 												</a>
 
 											</animated.div>
@@ -220,8 +249,31 @@ class ContactUs extends Component {
 							</animated.div>
 						)}
 					</VisibilitySensor >
+					<VisibilitySensor partialVisibility={true} >
+						{({ isVisible }) => (
+							<animated.div >
+								<Spring
+									from={{ opacity: isVisible ? 0 : 1 }}
+									to={{ opacity: isVisible ? 1 : 0 }}
+									config={{ duration: !isVisible ? 0 : 5000 }}
+								>
+
+									{props => {
+										return (
+											<animated.div style={props}>
+
+												<h4 className="pt-3" style={{ fontSize: "2rem", color: "darkgrey" }}>Telephone </h4>
+													<h6 className="" style={{ fontSize: "1.25rem" }}>+61 404890042</h6>
+
+											</animated.div>
+										)
+									}}
+								</Spring>
+							</animated.div>
+						)}
+					</VisibilitySensor >
 				</div>
-				*/}
+
 
 			</div>
 		);

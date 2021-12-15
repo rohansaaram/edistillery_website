@@ -26,7 +26,7 @@ export default function TheAlcoholBook() {
     return (
         <div>
             <div className="row">
-                <div className="col-sm-9">
+                <div className="col-sm-9 pb-5 mb-5">
                     <h2 style={{ marginBottom: "50px" }}>{window.locale.translate("The Alcohol Book")}</h2>
                     <Element name="ProdVSDisp" className="mt-5">
                         <h4 style={{ marginBottom: "50px" }}>{window.locale.translate("Overview")}</h4>

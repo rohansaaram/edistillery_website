@@ -26,7 +26,7 @@ export default function Dilution() {
     return (
         <div>
             <div className="row">
-                <div className="col-sm-9">
+                <div className="col-sm-9 pb-5 mb-5">
                     <h2 style={{ marginBottom: "50px" }}>{window.locale.translate("Alcohol In Stock")}</h2>
                     <Element name="">
                         {window.locale.translate("This section in the reports demonstrates all the alcohol present at each place and step in your warehouse at the current time as shown in the below image.")}

@@ -26,7 +26,7 @@ export default function Dilution() {
     return (
         <div>
             <div className="row">
-                <div className="col-sm-9">
+                <div className="col-sm-9 pb-5 mb-5">
                     <h2 style={{ marginBottom: "50px" }}>{window.locale.translate("Distillations")}</h2>
                     <Element name="" className="">
                         {window.locale.translate("In the distillation module, we keep record of all the facts of a distillation process. The sku of the still used, the losses allowed and incurred, the feints obtained by the process and the duration the process took. ")}

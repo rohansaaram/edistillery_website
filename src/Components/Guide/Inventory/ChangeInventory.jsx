@@ -30,7 +30,7 @@ export default function ChangeInventory() {
     return (
         <div>
             <div className="row">
-                <div className="col-sm-9">
+                <div className="col-sm-9 pb-5 mb-5">
                     <Element name="">
                         <h2 style={{ marginBottom: "50px" }}>{window.locale.translate("Change Inventory")}</h2>
                         {window.locale.translate("There are two ways to manage and change your inventory when there is a difference between physical and application inventory.")}

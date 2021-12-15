@@ -26,7 +26,7 @@ export default function Dilution() {
     return (
         <div>
             <div className="row">
-                <div className="col-sm-9">
+                <div className="col-sm-9 pb-5 mb-5">
                     <h2 style={{ marginBottom: "50px" }}>{window.locale.translate("Inventory Snapshots")}</h2>
                     <Element name="">
                         {window.locale.translate("Snapshots of the inventory can be created and viewed in the reports -> inventory -> snapshots section.")}

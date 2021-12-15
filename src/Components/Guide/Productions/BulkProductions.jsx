@@ -27,7 +27,7 @@ export default function Dilution() {
     return (
         <div>
             <div className="row">
-                <div className="col-sm-9">
+                <div className="col-sm-9 pb-5 mb-5">
                     <h2 style={{ marginBottom: "50px" }}>{window.locale.translate("Bulk Productions")}</h2>
                     <Element name="">
                         {window.locale.translate("Bulk productions is the main asset of eDistillery. This section allows you to create your own bulk product of any type like liquor, whiskey or even macerate and reuse them by mixing any type of product with it.")}

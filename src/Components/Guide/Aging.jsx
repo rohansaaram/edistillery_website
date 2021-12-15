@@ -30,7 +30,7 @@ export default function Sampling() {
     return (
         <div>
             <div className="row">
-                <div className="col-sm-9">
+                <div className="col-sm-9 pb-5 mb-5">
                     <h2 style={{ marginBottom: "50px" }}>{window.locale.translate("Aging In Casks/Barrels")}</h2>
                     <Element name="">
                         {window.locale.translate("Aging is the process of storing distilled spirits (or wines) in barrels for a specific period of time. The goal of maturation is to remove harsh flavors from the raw alcohol while adding distinct flavor characteristics found in the barrel's wood.")}
